@@ -58,20 +58,21 @@ The dashboard includes interactive slicers for:
 - Category
 - Segment
 - Product
+  
 These slicers allow users to dynamically filter the dashboard and analyze specific business segments.
 
 # DAX Measures
-## Total Sales
+### Total Sales
 Total Sales = SUM(Sales_Data[Sales])
 
-## Total Profit
+### Total Profit
 Total Profit = SUM(Sales_Data[Profit])
 
-## Total Orders
+### Total Orders
 Total Orders = DISTINCTCOUNT(Sales_Data[Order_ID])
 
-## Profit Margin
+### Profit Margin
 Profit Margin = DIVIDE([Total Profit], [Total Sales])
 
-## Average Order Value
+### Average Order Value
 Average Order Value = DIVIDE([Total Sales], [Total Orders])
